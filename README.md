@@ -1,5 +1,5 @@
-roundcube_plugin_sshguard
-=========================
+Sshguard - A Roundcube mail plugin for logging failed logins to sshguard
+========================================================================
 
 Roundcube mail plugin for reporting failed login attempts to SSHGuard.
 
