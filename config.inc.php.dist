@@ -1,0 +1,24 @@
+<?php
+
+//
+// These are the defaults so you can leave them as-is.
+// You may want to change the log file, but you can simply tell sshguard to
+// read this log file using -l /var/log/webmail_block.log
+//
+$rcmail_config['sshguard_plugin'] = array(
+  // Set the logfile to write to:
+  'logfile' => '/var/log/webmail_block.log',
+
+  // The number of times to duplicate this failure report.
+  // The more attempts the soon sshguard thinks that there is a problem and
+  // blocks the IP address. 3 Will give you a reasonable chance of a quick
+  // block on a subsequent failed attempt.
+  'write_count'   => 3,
+
+  // In case any of this matters to you, it can be configured, but it isn't
+  // used by sshguard by default so you can just leave it as-is
+  'fake_username' => 'webmail',
+  'fake_pid'      => 999,
+  'fake_port'     => 999,
+);
+?>
